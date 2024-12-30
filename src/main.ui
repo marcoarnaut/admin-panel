@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPanel</class>
+ <widget class="QMainWindow" name="MainPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>701</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Employee list:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>701</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>With conditions:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Admin Panel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionExit_File"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionSave_and_Exit"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuSelect">
+    <property name="title">
+     <string>Select</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionRemove"/>
+    <addaction name="separator"/>
+    <addaction name="actionSet_Salary"/>
+    <addaction name="actionSet_Age"/>
+    <addaction name="actionSet_Skills"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopy_to_Clipboard"/>
+   </widget>
+   <widget class="QMenu" name="menuSerach">
+    <property name="title">
+     <string>Search</string>
+    </property>
+    <addaction name="actionWith_Salary"/>
+    <addaction name="actionWith_Age"/>
+    <addaction name="actionWith_Skills"/>
+    <addaction name="separator"/>
+    <addaction name="actionWith_Name"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionSort_by_Name"/>
+    <addaction name="actionSort_by_Salary"/>
+    <addaction name="actionSort_by_Age"/>
+    <addaction name="actionSort_by_Skills"/>
+    <addaction name="separator"/>
+    <addaction name="actionreverse"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSelect"/>
+   <addaction name="menuSerach"/>
+   <addaction name="menuView"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSave_and_Exit">
+   <property name="text">
+    <string>Save and Exit</string>
+   </property>
+  </action>
+  <action name="actionExit_File">
+   <property name="text">
+    <string>Exit File</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionCopy_to_Clipboard">
+   <property name="text">
+    <string>Copy to Clipboard</string>
+   </property>
+  </action>
+  <action name="actionWith_Salary">
+   <property name="text">
+    <string>With Salary</string>
+   </property>
+  </action>
+  <action name="actionWith_Age">
+   <property name="text">
+    <string>With Age</string>
+   </property>
+  </action>
+  <action name="actionWith_Skills">
+   <property name="text">
+    <string>With Skills</string>
+   </property>
+  </action>
+  <action name="actionWith_Name">
+   <property name="text">
+    <string>With Name</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionSet_Salary">
+   <property name="text">
+    <string>Set Salary</string>
+   </property>
+  </action>
+  <action name="actionSet_Age">
+   <property name="text">
+    <string>Set Age</string>
+   </property>
+  </action>
+  <action name="actionSet_Skills">
+   <property name="text">
+    <string>Set Skills</string>
+   </property>
+  </action>
+  <action name="actionSort_by_Name">
+   <property name="text">
+    <string>Sort by Name</string>
+   </property>
+  </action>
+  <action name="actionSort_by_Age">
+   <property name="text">
+    <string>Sort by Age</string>
+   </property>
+  </action>
+  <action name="actionSort_by_Salary">
+   <property name="text">
+    <string>Sort by Salary</string>
+   </property>
+  </action>
+  <action name="actionSort_by_Skills">
+   <property name="text">
+    <string>Sort by Skills</string>
+   </property>
+  </action>
+  <action name="actionreverse">
+   <property name="text">
+    <string>Reverse</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
